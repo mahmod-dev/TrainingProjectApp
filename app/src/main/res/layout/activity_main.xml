@@ -8,36 +8,75 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tvBlack"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@drawable/shape_tv"
-        android:gravity="center"
-        android:text="Hello world!"
-        android:textColor="@color/blue" />
+    <FrameLayout
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_img_background">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_tv"
+            android:src="@drawable/ic_launcher_foreground" />
+    </FrameLayout>
 
     <EditText
+        android:id="@+id/etUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/shape_tv"
-        android:hint="enter your name"
-        android:paddingVertical="10dp" />
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/shape_edit_text"
+        android:drawableStart="@drawable/ic_person"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/red"
+        android:hint="Username"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="16dp"
+        android:textColorHint="@color/red" />
 
-
-    <androidx.cardview.widget.CardView
+    <EditText
+        android:id="@+id/etPassword"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_margin="20dp"
-        app:cardBackgroundColor="@color/blue"
-        app:cardCornerRadius="30dp">
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/shape_edit_text"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/red"
+        android:hint="@string/password"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="16dp"
+        android:textColorHint="@color/red" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-    </androidx.cardview.widget.CardView>
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_img_background"
+            android:text="login" />
 
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_img_background"
+            android:text="Register" />
+    </LinearLayout>
 
 </LinearLayout>
