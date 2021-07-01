@@ -57,7 +57,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnLogin"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -65,17 +65,17 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="5dp"
             android:layout_weight="1"
-            android:background="@drawable/shape_img_background"
+            android:background="@drawable/shape_btn_login"
             android:text="login" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="20dp"
             android:layout_weight="1"
-            android:background="@drawable/shape_img_background"
+            android:background="@drawable/shape_btn_register"
             android:text="Register" />
     </LinearLayout>
 
