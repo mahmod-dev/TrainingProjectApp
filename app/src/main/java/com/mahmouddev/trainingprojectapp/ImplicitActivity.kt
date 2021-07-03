@@ -12,7 +12,7 @@ class ImplicitActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityImplicitBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+       
         goToWebsite()
         callNumber()
         sendSms()
@@ -20,6 +20,7 @@ class ImplicitActivity : AppCompatActivity() {
     }
 
     private fun goToWebsite() {
+
         binding.btnWebsite.setOnClickListener {
             val intent = Intent()
             intent.action = Intent.ACTION_VIEW

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/red_light"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="8dp"
+        android:text="Name"
+        android:textColor="@color/blue"
+        android:textSize="22sp"
+
+        />
+
+    <TextView
+        android:id="@+id/tvAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp"
+        android:padding="8dp"
+        android:text="Age"
+        android:textColor="@color/black"
+
+        />
+
+    <TextView
+        android:id="@+id/tvRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvName"
+        android:layout_margin="5dp"
+        android:padding="8dp"
+        android:text="Rate"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tvGraduate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAge"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp"
+        android:padding="8dp"
+        android:text="graduate"
+        android:textColor="@color/gray_dark" />
+
+</RelativeLayout>

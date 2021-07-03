@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mahmouddev.trainingprojectapp">
 
-   <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -11,8 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TrainingProjectApp">
-
-        <activity android:name=".ImplicitActivity">
+        <activity android:name=".RecycleViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,10 +19,10 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".DetailsActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".ImplicitActivity"></activity>
 
-        </activity>
+        <activity android:name=".DetailsActivity" />
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
