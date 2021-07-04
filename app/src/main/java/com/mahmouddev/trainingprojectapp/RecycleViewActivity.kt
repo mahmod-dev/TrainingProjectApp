@@ -2,6 +2,7 @@ package com.mahmouddev.trainingprojectapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.mahmouddev.trainingprojectapp.adapters.Adapter
 import com.mahmouddev.trainingprojectapp.databinding.ActivityRecycleViewBinding
@@ -29,8 +30,8 @@ class RecycleViewActivity : AppCompatActivity() {
         data.add(Student("Raghad12", 99.9, 10, false))
 
         val adapter = Adapter(data)
-        val manager = LinearLayoutManager(this)
-        manager.orientation = LinearLayoutManager.VERTICAL
+        val manager = GridLayoutManager(this,2)
+       // manager.orientation = LinearLayoutManager.HORIZONTAL
         binding.rvStudent.layoutManager =manager
         binding.rvStudent.adapter = adapter
 

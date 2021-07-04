@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".SharedPrefActivity">
+
+    <TextView
+        android:id="@+id/tvRead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shared Pref Text"
+        android:textSize="30sp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/red"/>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter your name"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Name"/>
+
+    <Button
+        android:id="@+id/btnRead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read Name"/>
+
+
+</LinearLayout>
