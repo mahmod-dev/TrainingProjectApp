@@ -6,6 +6,7 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.mahmouddev.trainingprojectapp.databinding.ActivityMainBinding
 import com.mahmouddev.trainingprojectapp.util.Constatnts
+import com.mahmouddev.trainingprojectapp.util.MyPreferences
 
 class MainActivity : AppCompatActivity() {
     val TAG = "MainActivity"

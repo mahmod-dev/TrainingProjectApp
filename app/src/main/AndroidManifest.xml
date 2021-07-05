@@ -11,19 +11,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TrainingProjectApp">
-        <activity android:name=".SharedPrefActivity">
+        <activity android:name=".lecture_eight.StudentDetailsActivity"></activity>
+        <activity android:name=".lecture_eight.AllStudentActivity" />
+        <activity android:name=".lecture_eight.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RecycleViewActivity">
+        <activity android:name=".SharedPrefActivity">
 
         </activity>
+        <activity android:name=".RecycleViewActivity" />
         <activity android:name=".ImplicitActivity" />
         <activity android:name=".DetailsActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

@@ -3,6 +3,7 @@ package com.mahmouddev.trainingprojectapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.mahmouddev.trainingprojectapp.databinding.ActivitySharedPrefBinding
+import com.mahmouddev.trainingprojectapp.util.MyPreferences
 
 class SharedPrefActivity : AppCompatActivity() {
     lateinit var binding: ActivitySharedPrefBinding
@@ -11,11 +12,12 @@ class SharedPrefActivity : AppCompatActivity() {
         binding = ActivitySharedPrefBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val pref = getSharedPreferences("MyPref", MODE_PRIVATE)
+        MyPreferences.context = this
 
         val edit = pref.edit()
 
         binding.btnSave.setOnClickListener {
-          //  val name = binding.etName.text.toString()
+            //  val name = binding.etName.text.toString()
 
             edit.putString("name", "Raghad").apply()
             edit.putInt("age", 23).apply()
@@ -30,6 +32,18 @@ class SharedPrefActivity : AppCompatActivity() {
             binding.tvRead.text = age.toString()
         }
 
+
+    }
+
+    private fun myPreferences() {
+
+        // write/save
+        MyPreferences.setStr("key", "value")
+        MyPreferences.setInt("age", 10)
+
+        // read
+        val key = MyPreferences.getStr("key")
+        val age = MyPreferences.getInt("age")
 
     }
 }
