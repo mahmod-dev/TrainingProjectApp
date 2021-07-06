@@ -20,9 +20,8 @@ class MainActivity : AppCompatActivity() {
         binding.btnLogin.setOnClickListener {
           //  sendDataAsVariables()
             sendDataAsObject()
-//            val launchIntent = packageManager.getLaunchIntentForPackage("com.facebook.katana")
-//            launchIntent?.let { startActivity(it) }
         }
+
 
     }
 
