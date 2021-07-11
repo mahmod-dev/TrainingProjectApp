@@ -34,14 +34,15 @@ class AllStudentActivity : AppCompatActivity() {
         binding.rvStudents.layoutManager = manager
         binding.rvStudents.adapter = adapter
 
-        adapter.onItemClick = {position,student->
-            Log.e(TAG, "onItemClick: position: $position student: $student" )
+      /*  adapter.onItemClick = {student->
+            Log.e(TAG, "onItemClick: student: $student" )
 
             val intent = Intent(this,StudentDetailsActivity::class.java)
             intent.putExtra("student",student)
             startActivity(intent)
 
-        }
+        }*/
+
 
 
     }

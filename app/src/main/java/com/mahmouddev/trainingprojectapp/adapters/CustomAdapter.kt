@@ -13,7 +13,7 @@ import com.mahmouddev.trainingprojectapp.lecture_eight.StudentDetailsActivity
 
 class CustomAdapter(private val data: ArrayList<Student>,val context: Context) :
     RecyclerView.Adapter<CustomAdapter.Holder>() {
-    var onItemClick: ((Int,Student)->Unit)? = null
+    var onItemClick: ((Student)->Unit)? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
         val inflater = LayoutInflater.from(parent.context)
@@ -59,11 +59,12 @@ class CustomAdapter(private val data: ArrayList<Student>,val context: Context) :
                 tvAge.text = student.age.toString()
 
                 rlItem.setOnClickListener {
-                 /*   val intent = Intent(context,StudentDetailsActivity::class.java)
-                    intent.putExtra("student",student)
-                    context.startActivity(intent)*/
 
-                    onItemClick?.invoke(adapterPosition,student)
+                    val intent = Intent(context,StudentDetailsActivity::class.java)
+                    intent.putExtra("student",student)
+                    context.startActivity(intent)
+
+                 //   onItemClick?.invoke(student)
 
                 }
 

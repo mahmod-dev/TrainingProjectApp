@@ -7,4 +7,9 @@
     android:id="@+id/container"
     tools:context=".lecture_ten.MenuActivity">
 
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/containerFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
