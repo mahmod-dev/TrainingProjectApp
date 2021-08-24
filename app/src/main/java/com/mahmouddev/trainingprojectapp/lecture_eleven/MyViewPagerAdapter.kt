@@ -5,7 +5,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
 
 class MyViewPagerAdapter(fm:FragmentManager) : FragmentStatePagerAdapter(fm) {
-    val list = arrayOf("Profile","Favorite")
+    val list = arrayOf("Profile","Favorite","Profile","Favorite","Profile","Favorite","Profile","Favorite",)
 
     override fun getItem(position: Int): Fragment {
 

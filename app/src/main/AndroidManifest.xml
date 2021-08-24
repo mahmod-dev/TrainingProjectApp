@@ -3,6 +3,7 @@
     package="com.mahmouddev.trainingprojectapp">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,16 +12,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TrainingProjectApp">
-        <activity android:name=".lecture_eleven.TabActivity">
+        <activity android:name=".lecture_thirteen.BottomNavActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".lecture_eleven.BasicActivity">
+        <activity android:name=".lecture_eleven.ViewPager2Activity">
 
         </activity>
+        <activity android:name=".lecture_eleven.TabActivity"></activity>
+        <activity android:name=".lecture_eleven.BasicActivity" />
         <activity android:name=".lecture_ten.ContextMenuActivity" />
         <activity android:name=".lecture_ten.MenuActivity" />
         <activity android:name=".lecture_eight.StudentDetailsActivity" />

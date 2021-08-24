@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/bottomSettings"
+        android:icon="@drawable/ic_settings"
+        android:title="settings"/>
+
+    <item android:id="@+id/bottomFavorite"
+        android:icon="@drawable/ic_favorite"
+        android:title="favorite"/>
+
+    <item android:id="@+id/bottomProfile"
+        android:icon="@drawable/ic_person"
+        android:title="profile"/>
+</menu>

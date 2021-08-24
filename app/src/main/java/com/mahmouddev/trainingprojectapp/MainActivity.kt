@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import com.mahmouddev.trainingprojectapp.database.DatabaseHelper
 import com.mahmouddev.trainingprojectapp.databinding.ActivityMainBinding
 import com.mahmouddev.trainingprojectapp.util.Constatnts
 import com.mahmouddev.trainingprojectapp.util.MyPreferences
@@ -16,6 +17,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         Log.e(TAG, "onCreate: ")
+
+    val dbHelper =    DatabaseHelper(this)
+
+      //  dbHelper.insert()
 
         binding.btnLogin.setOnClickListener {
           //  sendDataAsVariables()

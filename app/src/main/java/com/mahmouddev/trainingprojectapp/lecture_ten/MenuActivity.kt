@@ -7,7 +7,6 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.core.content.ContextCompat
-import com.mahmouddev.trainingprojectapp.test.MainFragment
 import com.mahmouddev.trainingprojectapp.R
 import com.mahmouddev.trainingprojectapp.databinding.ActivityMenuBinding
 
@@ -17,10 +16,6 @@ class MenuActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMenuBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        val fragment = MainFragment()
-
-        supportFragmentManager.beginTransaction().replace(R.id.containerFragment,fragment,"").commit()
 
 
     }
